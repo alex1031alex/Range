@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Range</title>
+</head>
+<body>
+  <form>
+    <fieldset class="filter filter--price">
+     <legend class="filter__title">Цена:</legend>
+     <div class="filter__range range">
+       <div class="range__scale">
+        <div class="range__thumb range__thumb--min" draggable="true"></div>
+        <div class="range__bar"></div>
+        <div class="range__thumb range__thumb--max" draggable="true"></div>
+       </div>
+      </div>
+     <div class="filter__number-fields-wrap">
+      <div class="filter__number-min-group">
+       <label for="filters-form-price-min" class="visually-hidden">От</label>
+       <input class="filter__number-field filter__number-field--min" type="number" name="filters-form-price" id="filters-form-price-min" value="0">
+      </div>
+      <div class="filter__number-max-group">
+       <label for="filters-form-price-max" class="visually-hidden">До</label>
+       <input class="filter__number-field filter__number-field--max" type="number" name="filters-form-price" id="filters-form-price-max" value="30000">
+      </div>
+     </div>
+    </fieldset>
+  </form>
+  <script src="js/range.js"></script>
+</body>
+</html>
